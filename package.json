@@ -1,6 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "dev": "npx servor ./ ./index.html --reload 4000"
+    "dev": "npx servor ./ index.html --reload 4000"
   }
 }

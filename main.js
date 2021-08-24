@@ -1,6 +1,14 @@
 function onStartup() {
-  document.querySelector(".preloader").remove();
+  document.querySelector(".preloader").classList.add("done");
+  setTimeout(() => {
+    document.querySelector(".preloader").remove();
+  }, 1100);
 }
+
+window.addEventListener("load", () => {
+  const body = document.querySelector("body");
+  body.scrollTop = 0;
+});
 
 (async function () {
   const unityInstance = await createUnityInstance(
@@ -17,7 +25,5 @@ function onStartup() {
       // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
     }
   );
-
-  console.log(unityInstance);
-  unityInstance.SendMessage("JS", "SetText", "Hej hackathon");
+  // unityInstance.SendMessage("JS", "SetText", "Hej hackathon");
 })();
