@@ -6,9 +6,14 @@ function onStartup() {
 }
 
 window.addEventListener("load", () => {
+  resizeCanvas(16 / 9);
   if (window.location.hash !== "") {
     window.location.href = window.location.href.split("#")[0];
   }
+});
+
+window.addEventListener("resize", () => {
+  resizeCanvas(16 / 9);
 });
 
 // About button

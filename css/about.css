@@ -10,6 +10,13 @@
   top: 0;
   height: 100px;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+#about nav h2 {
+  font-size: 32px;
 }
 
 #about nav button.return {
@@ -17,7 +24,6 @@
   width: 64px;
   height: 64px;
   border: none;
-  margin: 8px 8px 0px 0px;
   transition: transform 0.3s ease-out, background-color 0.3s ease-out;
   font-size: 24px;
 }
@@ -41,7 +47,7 @@
   justify-content: center;
   align-items: center;
   margin: 8px;
-  border-radius: 25%;
+  border-radius: 16px;
   padding: 16px;
   color: white;
   background-color: black;
@@ -49,7 +55,7 @@
 }
 
 #about a.card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   background-color: darkgrey;
 }
 
@@ -60,11 +66,11 @@
 }
 
 #about .pages nav {
+  height: auto;
   position: sticky;
-  top: calc(100vh - 184px);
-  display: flex;
+  top: calc(100vh - 176px);
+  padding: 0px;
   justify-content: flex-end;
-  width: 100%;
 }
 
 #about .pages nav ul {
@@ -79,11 +85,12 @@
   color: white;
   border-radius: 30%;
   border-style: none;
-  margin: 2px;
+  margin: 4px;
   transition: background-color 0.3s ease-out, transform 0.3s ease-out;
 }
 
 #about .pages .page {
   width: 100%;
   min-height: 100vh;
+  padding: 64px;
 }

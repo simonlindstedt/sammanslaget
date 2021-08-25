@@ -1,9 +1,24 @@
+function resizeCanvas(ratio) {
+  const canvas = document.querySelector("canvas");
+  let h = window.innerHeight - 64;
+  let w = Math.floor(h * ratio);
+
+  if (w > window.innerWidth) {
+    w = window.innerWidth;
+    h = Math.floor(w / ratio);
+  }
+
+  canvas.style.height = `${h}px`;
+  canvas.style.width = `${w}px`;
+}
+
 function renderAboutMenu() {
   const aboutSection = document.createElement("section");
   aboutSection.id = "about";
 
   aboutSection.innerHTML = `
       <nav>
+        <h2>Creators</h2>
         <a href="#home">
           <button class="return">↑</button>
         </a>

@@ -92,8 +92,8 @@ button.about-button:hover {
   height: 100vh;
 }
 
-canvas {
+/* canvas {
   aspect-ratio: 16 / 9;
   max-height: calc(100% - 64px);
   max-width: 100%;
-}
+} */
