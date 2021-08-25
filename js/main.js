@@ -33,9 +33,9 @@ if (aboutButton) {
   const unityInstance = await createUnityInstance(
     document.querySelector("#unity-canvas"),
     {
-      dataUrl: "Build/Build.data",
-      frameworkUrl: "Build/Build.framework.js",
-      codeUrl: "Build/Build.wasm",
+      dataUrl: "Build/Build.data.br",
+      frameworkUrl: "Build/Build.framework.js.br",
+      codeUrl: "Build/Build.wasm.br",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "Sammanslaget",
