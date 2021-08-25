@@ -1,5 +1,4 @@
-function resizeCanvas(ratio) {
-  const canvas = document.querySelector("canvas");
+function ratioResize(ratio, element) {
   let h = window.innerHeight - 64;
   let w = Math.floor(h * ratio);
 
@@ -8,8 +7,8 @@ function resizeCanvas(ratio) {
     h = Math.floor(w / ratio);
   }
 
-  canvas.style.height = `${h}px`;
-  canvas.style.width = `${w}px`;
+  element.style.height = `${h}px`;
+  element.style.width = `${w}px`;
 }
 
 function renderAboutMenu() {

@@ -76,9 +76,11 @@ main nav {
 }
 
 button.about-button {
+  color: white;
   background-color: unset;
   border: unset;
   margin: 8px 8px 8px 0px;
+  font-size: 16px;
 }
 
 button.about-button:hover {
@@ -87,7 +89,16 @@ button.about-button:hover {
 
 .content-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: black;
+}
+
+.content-wrapper button.full-screen {
+  font-size: 16px;
+  background-color: unset;
+  color: white;
+  border: unset;
 }
