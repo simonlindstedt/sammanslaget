@@ -1,0 +1,89 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  width: 100vw;
+}
+
+#about nav {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 100%;
+}
+
+#about nav button.return {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  border: none;
+  margin: 8px 8px 0px 0px;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+  font-size: 24px;
+}
+
+#about nav button.return:hover {
+  transform: scale(1.03);
+  background-color: rgb(126, 126, 126);
+  color: white;
+}
+
+#about #card-grid {
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#about .card {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  border-radius: 25%;
+  padding: 16px;
+  color: white;
+  background-color: black;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+#about a.card:hover {
+  transform: scale(1.03);
+  background-color: darkgrey;
+}
+
+#about .pages {
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+#about .pages nav {
+  position: sticky;
+  top: calc(100vh - 184px);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#about .pages nav ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#about .pages nav ul li button {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  border-radius: 30%;
+  border-style: none;
+  margin: 2px;
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+#about .pages .page {
+  width: 100%;
+  min-height: 100vh;
+}

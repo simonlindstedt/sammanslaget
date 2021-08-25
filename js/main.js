@@ -2,50 +2,32 @@ function onStartup() {
   document.querySelector(".preloader").classList.add("done");
   setTimeout(() => {
     document.querySelector(".preloader").remove();
-  }, 1100);
+  }, 2100);
 }
 
+window.addEventListener("load", () => {
+  if (window.location.hash !== "") {
+    window.location.href = window.location.href.split("#")[0];
+  }
+});
+
+// About button
 const aboutButton = document.querySelector(".about-button");
 
 if (aboutButton) {
   aboutButton.addEventListener("click", () => {
-    if (document.querySelector("section.about") === null) {
+    if (document.querySelector("section#about") === null) {
       renderAboutMenu();
+      document.querySelector("section#about").scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      document.querySelector("section#about").scrollIntoView({
+        behavior: "smooth",
+      });
     }
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth",
-    });
   });
 }
-
-const pageNavButton = document.querySelector("button.nav-button");
-const navItems = document.querySelectorAll("ul.nav-items li");
-
-pageNavButton.addEventListener("click", () => {
-  let i = 1;
-  pageNavButton.classList.toggle("active");
-
-  if (pageNavButton.classList.contains("active")) {
-    navItems.forEach((navItem) => {
-      const translateString = `translateY(${i * 64 * -1}px)`;
-      navItem.style.transform = translateString;
-      navItem.querySelector("button").addEventListener("click", () => {
-        navItems.forEach((navItem) => {
-          pageNavButton.classList.remove("active");
-          navItem.style.transform = "translateY(0px)";
-        });
-      });
-      i++;
-    });
-  } else {
-    navItems.forEach((navItem) => {
-      navItem.style.transform = "translateY(0px)";
-    });
-  }
-});
-
-// window.location.hash
 
 (async function () {
   const unityInstance = await createUnityInstance(
