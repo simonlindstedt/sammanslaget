@@ -1,3 +1,9 @@
+:root {
+  --bgColor: rgb(32, 32, 32);
+  --textColor: white;
+  --cardColor: lightslategray;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +13,7 @@ html {
 }
 
 body {
+  color: var(--textColor);
   margin: 0;
   padding: 0;
   min-width: 100vw;
@@ -14,10 +21,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow: hidden;
+  background-color: var(--bgColor);
 }
 
 :fullscreen {
-  background-color: hotpink;
+  background-color: var(--bgColor);
 }
 
 .preloader {
@@ -27,8 +35,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: black;
-  color: white;
+  background-color: var(--bgColor);
+  color: var(--textColor);
   top: 0;
   left: 0;
   width: 100vw;
@@ -97,8 +105,8 @@ button.about-button svg {
 }
 
 button.about-button span {
+  color: var(--textColor);
   position: relative;
-
   z-index: 2;
 }
 
@@ -114,6 +122,7 @@ button.about-button span {
   font-size: 16px;
   background-color: unset;
   border: unset;
+  color: var(--textColor);
 }
 
 .full-screen-wrapper {
