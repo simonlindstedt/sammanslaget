@@ -75,14 +75,16 @@
 #about .pages nav {
   height: auto;
   position: sticky;
-  top: calc(100vh - 176px);
+  top: calc(100vh - 188px);
   padding: 0px;
   justify-content: flex-end;
+  background-color: unset;
 }
 
 #about .pages nav ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-right: 16px;
 }
 
 #about .pages nav ul li button {

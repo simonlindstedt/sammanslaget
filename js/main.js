@@ -4,12 +4,12 @@ const closeFullScreenButton = document.querySelector(
   ".full-screen-wrapper button"
 );
 
-// function onStartup() {
-//   document.querySelector(".preloader").classList.add("done");
-//   setTimeout(() => {
-//     document.querySelector(".preloader").remove();
-//   }, 2100);
-// }
+function onStartup() {
+  document.querySelector(".preloader").classList.add("done");
+  setTimeout(() => {
+    document.querySelector(".preloader").remove();
+  }, 2100);
+}
 
 window.addEventListener("load", () => {
   ratioResize(16 / 9, canvas);
@@ -30,6 +30,7 @@ const aboutButton = document.querySelector(".about-button");
 if (aboutButton) {
   aboutButton.addEventListener("click", () => {
     if (document.querySelector("section#about") === null) {
+      document.body.style.overflowY = "scroll";
       renderAboutMenu();
       document.querySelector("section#about").scrollIntoView({
         behavior: "smooth",
