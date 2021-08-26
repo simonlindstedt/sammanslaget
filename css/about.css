@@ -11,7 +11,8 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 16px;
+  background-color: var(--bgColor);
 }
 
 #about nav h2 {
@@ -98,5 +99,5 @@
 #about .pages .page {
   width: 100%;
   min-height: 100vh;
-  padding: 64px;
+  padding: 128px 64px 64px 64px;
 }
