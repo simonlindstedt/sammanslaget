@@ -1,11 +1,15 @@
 const canvas = document.querySelector("canvas");
+const fullScreenButton = document.querySelector("button.full-screen");
+const closeFullScreenButton = document.querySelector(
+  ".full-screen-wrapper button"
+);
 
-function onStartup() {
-  document.querySelector(".preloader").classList.add("done");
-  setTimeout(() => {
-    document.querySelector(".preloader").remove();
-  }, 2100);
-}
+// function onStartup() {
+//   document.querySelector(".preloader").classList.add("done");
+//   setTimeout(() => {
+//     document.querySelector(".preloader").remove();
+//   }, 2100);
+// }
 
 window.addEventListener("load", () => {
   ratioResize(16 / 9, canvas);
@@ -36,13 +40,25 @@ if (aboutButton) {
   });
 }
 
-// Fullscreen button
+// Fullscreen button listeners
 
-const fullScreenButton = document.querySelector("button.full-screen");
+document.addEventListener("fullscreenchange", () => {
+  // ratioResize(16 / 9, canvas);
+  canvas.width = "100%";
+  canvas.height = "auto";
+  if (document.fullscreenEnabled !== null) {
+    closeFullScreenButton.classList.toggle("active");
+  }
+});
 
 fullScreenButton.addEventListener("click", () => {
-  canvas.requestFullscreen({ navigationUI: "show" });
+  canvas.parentElement.requestFullscreen({ navigationUI: "show" });
 });
+
+closeFullScreenButton.addEventListener("click", () => {
+  document.exitFullscreen();
+});
+
 (async function () {
   const unityInstance = await createUnityInstance(canvas, {
     dataUrl: "Build/Build.data.unityweb",

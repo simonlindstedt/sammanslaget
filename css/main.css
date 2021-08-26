@@ -16,6 +16,10 @@ body {
   overflow: hidden;
 }
 
+:fullscreen {
+  background-color: hotpink;
+}
+
 .preloader {
   z-index: 2;
   position: absolute;
@@ -70,6 +74,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding: 24px;
 }
 
 main nav {
@@ -77,15 +82,24 @@ main nav {
 }
 
 button.about-button {
-  color: white;
+  position: relative;
+  width: 84px;
   background-color: unset;
   border: unset;
-  margin: 8px 8px 8px 0px;
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button.about-button:hover {
-  text-decoration: underline;
+button.about-button svg {
+  position: absolute;
+  z-index: 1;
+}
+
+button.about-button span {
+  position: relative;
+
+  z-index: 2;
 }
 
 .content-wrapper {
@@ -94,12 +108,27 @@ button.about-button:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
 }
 
 .content-wrapper button.full-screen {
   font-size: 16px;
   background-color: unset;
-  color: white;
   border: unset;
+}
+
+.full-screen-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-screen-wrapper button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: none;
+}
+
+.full-screen-wrapper button.active {
+  display: initial;
 }

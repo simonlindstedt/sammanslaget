@@ -11,7 +11,7 @@
   </head>
   <body id="home">
     <main>
-      <section class="preloader">
+      <!-- <section class="preloader">
         <div class="content">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.4 490.4">
             <path
@@ -20,16 +20,33 @@
           </svg>
           <h2>Laddar...</h2>
         </div>
-      </section>
+      </section> -->
       <nav>
         <ul>
           <li>
-            <button class="about-button">About</button>
+            <button class="about-button">
+              <svg
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 520 240"
+              >
+                <path
+                  d="M.75 127C.75-1.64999 111.06.999998 257 .999998 513.77.999998 519.25 20.16 519.25 127c0 98.13-23.38 113.96-274.25 112C99.06 239 .75 250.35.75 127z"
+                  fill="#2D9887"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+              <span>Om oss</span>
+            </button>
           </li>
         </ul>
       </nav>
       <section class="content-wrapper">
-        <canvas id="unity-canvas"></canvas>
+        <div class="full-screen-wrapper">
+          <canvas id="unity-canvas"></canvas>
+          <button>X</button>
+        </div>
         <button class="full-screen">Go full screen</button>
       </section>
     </main>

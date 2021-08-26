@@ -20,18 +20,19 @@
 }
 
 #about nav button.return {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  background-color: unset;
   width: 64px;
   height: 64px;
   border: none;
   transition: transform 0.3s ease-out, background-color 0.3s ease-out;
-  font-size: 24px;
 }
 
-#about nav button.return:hover {
-  transform: scale(1.03);
-  background-color: rgb(126, 126, 126);
-  color: white;
+#about nav button.return:hover svg {
+  transform: scale(1.05);
 }
 
 #about #card-grid {
@@ -47,7 +48,7 @@
   justify-content: center;
   align-items: center;
   margin: 8px;
-  border-radius: 16px;
+  border-radius: 64px;
   padding: 16px;
   color: white;
   background-color: black;
