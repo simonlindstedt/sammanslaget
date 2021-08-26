@@ -61,37 +61,24 @@ function renderAboutMenu() {
             </li>
           </ul>
         </nav>
-        <div id="web-developers" class="page">
+         <div id="web-developers" class="page">
           <h1>Web developers</h1>
           <div class="presentation">
-          <div class="image">
-          <img src="./assets/images/dachshund.jpg" />
-          </div>
-          <div>
-          <h2>Linn</h2>
-          <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
-          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
-          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
-          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
           
-          </div>
-          </div>
-                    <div class="presentation">
           <div class="image">
-          <img src="./assets/images/bordercollie.jpg" />
+            <img src="./assets/images/dachshund.jpg" />
+            <img src="./assets/images/bordercollie.jpg" />
           </div>
           <div>
-          <h2>Simon</h2>
-          <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
-          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
-          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
-          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
-         
+            <h2>Simon och Linn</h2>
+            <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+            lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+            lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+            lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
+          </div>
           </div>
         </div>
-        </div>
-
-<div id="game-developers" class="page">
+        <div id="game-developers" class="page">
           <h1>Game developers</h1>
           <div class="presentation">
           <div class="image">
@@ -120,7 +107,6 @@ function renderAboutMenu() {
           </div>
           </div>
           </div>
-
 <div id="game-artists" class="page">
           <h1>Game artists</h1>
           <div class="presentation">
@@ -137,8 +123,6 @@ function renderAboutMenu() {
           </div>
           </div>
           </div>
-
-
         <div id="ux-designers" class="page">
           <h1>UX designers</h1>
           <div class="presentation">
@@ -180,7 +164,7 @@ function renderAboutMenu() {
       });
       button.addEventListener("mouseleave", () => {
         if (active !== window.location.hash) {
-          button.style.backgroundColor = "var(--cardColor)";
+          button.style.backgroundColor = "black";
           button.style.transform = "scale(1)";
         }
       });
@@ -189,7 +173,7 @@ function renderAboutMenu() {
         button.style.backgroundColor = "grey";
         button.style.transform = "scale(1.05)";
       } else {
-        button.style.backgroundColor = "var(--cardColor)";
+        button.style.backgroundColor = "black";
         button.style.transform = "scale(1)";
       }
     });
