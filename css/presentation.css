@@ -1,0 +1,10 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation-text {
+  background-color: lightgray;
+  padding: 5px;
+  margin: 10px;
+}

@@ -1,11 +1,11 @@
 const canvas = document.querySelector("canvas");
 
-function onStartup() {
+/* function onStartup() {
   document.querySelector(".preloader").classList.add("done");
   setTimeout(() => {
     document.querySelector(".preloader").remove();
   }, 2100);
-}
+} */
 
 window.addEventListener("load", () => {
   ratioResize(16 / 9, canvas);
