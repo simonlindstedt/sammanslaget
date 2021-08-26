@@ -19,7 +19,9 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("resize", () => {
-  ratioResize(16 / 9, canvas);
+  if (window.innerHeight !== screen.height) {
+    ratioResize(16 / 9, canvas);
+  }
 });
 
 // About button
@@ -43,9 +45,13 @@ if (aboutButton) {
 // Fullscreen button listeners
 
 document.addEventListener("fullscreenchange", () => {
-  // ratioResize(16 / 9, canvas);
-  canvas.width = "100%";
-  canvas.height = "auto";
+  ratioResize(16 / 9, canvas);
+
+  if ((screen.width / screen.height).toFixed(4) === (16 / 9).toFixed(4)) {
+    canvas.style.width = `${window.innerWidth}px`;
+    canvas.style.height = `${window.innerHeight}px`;
+  }
+
   if (document.fullscreenEnabled !== null) {
     closeFullScreenButton.classList.toggle("active");
   }

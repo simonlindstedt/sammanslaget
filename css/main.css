@@ -1,7 +1,7 @@
 :root {
   --bgColor: rgb(32, 32, 32);
   --textColor: white;
-  --cardColor: lightslategray;
+  --cardColor: #686569;
 }
 
 * {
