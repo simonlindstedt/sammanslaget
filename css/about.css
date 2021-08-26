@@ -28,15 +28,15 @@
   width: 64px;
   height: 64px;
   border: none;
-  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+  transition: transform 0.1s ease-out, background-color 0.1s ease-out;
 }
 
 #about nav button.return svg {
   width: 100%;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
-#about nav button.return:hover svg {
+#about nav button.return:hover {
   transform: scale(1.05);
 }
 
@@ -57,7 +57,7 @@
   padding: 16px;
   color: var(--textColor);
   background-color: var(--cardColor);
-  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+  transition: transform 0.1s ease-out, background-color 0.1s ease-out;
 }
 
 #about a.card:hover {
@@ -97,7 +97,7 @@
   border-radius: 30%;
   border-style: none;
   margin: 4px;
-  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+  transition: background-color 0.1s ease-out, transform 0.1s ease-out;
 }
 
 #about .pages .page {

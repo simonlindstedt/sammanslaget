@@ -9,7 +9,7 @@ function onStartup() {
   preloader.classList.add("done");
   setTimeout(() => {
     preloader.remove();
-  }, 2100);
+  }, 2500);
 }
 
 window.addEventListener("load", () => {

@@ -98,6 +98,11 @@ button.about-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.1s ease-in-out;
+}
+
+button.about-button:hover {
+  transform: scale(1.04);
 }
 
 button.about-button svg {
@@ -114,16 +119,23 @@ button.about-button span {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
 }
 
 .content-wrapper button.full-screen {
   font-size: 16px;
-  background-color: unset;
-  border: unset;
+  background-color: var(--cardColor);
   color: var(--textColor);
+  border: unset;
+  padding: 8px;
+  border-radius: 8px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.content-wrapper button.full-screen:hover {
+  transform: scale(1.04);
 }
 
 .full-screen-wrapper {
