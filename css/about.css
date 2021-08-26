@@ -1,7 +1,6 @@
 .about {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
   width: 100vw;
 }
 
@@ -31,6 +30,10 @@
   transition: transform 0.3s ease-out, background-color 0.3s ease-out;
 }
 
+#about nav button.return svg {
+  transition: transform 0.3s ease-in-out;
+}
+
 #about nav button.return:hover svg {
   transform: scale(1.05);
 }
@@ -50,8 +53,8 @@
   margin: 8px;
   border-radius: 64px;
   padding: 16px;
-  color: white;
-  background-color: black;
+  color: var(--textColor);
+  background-color: var(--cardColor);
   transition: transform 0.3s ease-out, background-color 0.3s ease-out;
 }
 
@@ -64,6 +67,7 @@
   flex-direction: column;
   width: 100%;
   position: relative;
+  color: var(--textColor);
 }
 
 #about .pages nav {
@@ -82,8 +86,8 @@
 #about .pages nav ul li button {
   width: 80px;
   height: 80px;
-  background-color: black;
-  color: white;
+  background-color: var(--cardColor);
+  color: var(--textColor);
   border-radius: 30%;
   border-style: none;
   margin: 4px;

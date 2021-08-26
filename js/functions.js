@@ -109,7 +109,7 @@ function renderAboutMenu() {
       });
       button.addEventListener("mouseleave", () => {
         if (active !== window.location.hash) {
-          button.style.backgroundColor = "black";
+          button.style.backgroundColor = "var(--cardColor)";
           button.style.transform = "scale(1)";
         }
       });
@@ -118,7 +118,7 @@ function renderAboutMenu() {
         button.style.backgroundColor = "grey";
         button.style.transform = "scale(1.05)";
       } else {
-        button.style.backgroundColor = "black";
+        button.style.backgroundColor = "var(--cardColor)";
         button.style.transform = "scale(1)";
       }
     });
