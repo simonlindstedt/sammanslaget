@@ -11,7 +11,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 32px;
   background-color: var(--bgColor);
 }
 
@@ -41,6 +41,7 @@
 }
 
 #about #card-grid {
+  padding: 16px;
   min-height: calc(100vh - 100px);
   width: 100%;
   display: grid;
