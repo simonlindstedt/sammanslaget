@@ -1,13 +1,14 @@
 const canvas = document.querySelector("canvas");
 const fullScreenButton = document.querySelector("button.full-screen");
+const preloader = document.querySelector(".preloader");
 const closeFullScreenButton = document.querySelector(
   ".full-screen-wrapper button"
 );
 
 function onStartup() {
-  document.querySelector(".preloader").classList.add("done");
+  preloader.classList.add("done");
   setTimeout(() => {
-    document.querySelector(".preloader").remove();
+    preloader.remove();
   }, 2100);
 }
 
@@ -67,16 +68,22 @@ closeFullScreenButton.addEventListener("click", () => {
 });
 
 (async function () {
-  const unityInstance = await createUnityInstance(canvas, {
-    dataUrl: "Build/Build.data",
-    frameworkUrl: "Build/Build.framework.js",
-    codeUrl: "Build/Build.wasm",
-    streamingAssetsUrl: "StreamingAssets",
-    companyName: "DefaultCompany",
-    productName: "Sammanslaget",
-    productVersion: "1.0",
-    // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-    // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-  });
+  const unityInstance = await createUnityInstance(
+    canvas,
+    {
+      dataUrl: "Build/Build.data",
+      frameworkUrl: "Build/Build.framework.js",
+      codeUrl: "Build/Build.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DefaultCompany",
+      productName: "Sammanslaget",
+      productVersion: "1.0",
+      // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+      // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+    },
+    function (percent) {
+      preloader.querySelector("h2").innerText = `Laddar...(${percent * 100}%)`;
+    }
+  );
   // unityInstance.SendMessage("JS", "SetText", "Hej hackathon");
 })();

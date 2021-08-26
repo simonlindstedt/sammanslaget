@@ -1,0 +1,9 @@
+@media screen and (max-width: 800px) {
+  #about .pages .image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #about .pages img {
+    height: 300px;
+  }
+}
