@@ -3,3 +3,9 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 900px) {
+  body {
+    overflow-y: scroll;
+  }
+}
