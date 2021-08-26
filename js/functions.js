@@ -64,26 +64,97 @@ function renderAboutMenu() {
         <div id="web-developers" class="page">
           <h1>Web developers</h1>
           <div class="presentation">
-          <div class="presentation-text">
-          <h2>Simon</h2>
+          <div class="image">
+          <img src="./assets/images/dachshund.jpg" />
           </div>
-          <div class="presentation-text">
+          <div>
           <h2>Linn</h2>
+          <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
+          
           </div>
+          </div>
+                    <div class="presentation">
+          <div class="image">
+          <img src="./assets/images/bordercollie.jpg" />
+          </div>
+          <div>
+          <h2>Simon</h2>
+          <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
+         
           </div>
         </div>
-        <div id="game-developers" class="page">
+        </div>
+
+<div id="game-developers" class="page">
           <h1>Game developers</h1>
+          <div class="presentation">
+          <div class="image">
+          <img src="./assets/images/greyhound.jpg" />
+          </div>
+          <div>
           <h2>Jonatan</h2>
+          <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
+          
+          </div>
+          </div>
+          <div class="presentation">
+          <div class="image">
+          <img src="./assets/images/pomeranian.jpg" />
+          </div>
+          <div>
           <h2>Emmi</h2>
-        </div>
-        <div id="game-artists" class="page">
+          <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
+          
+          </div>
+          </div>
+          </div>
+
+<div id="game-artists" class="page">
           <h1>Game artists</h1>
+          <div class="presentation">
+          <div class="image">
+          <img src="./assets/images/tollare.jpg" />
+          </div>
+          <div>
           <h2>Julia</h2>
-        </div>
+          <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
+          
+          </div>
+          </div>
+          </div>
+
+
         <div id="ux-designers" class="page">
           <h1>UX designers</h1>
+          <div class="presentation">
+          <div class="image">
+          <img src="./assets/images/komondor.jpg" />
+          </div>
+          <div>
           <h2>Marcus</h2>
+          <p>lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
+          lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum </p>
+          
+          </div>
+          </div>
+          </div>
         </div>
       </div>
   `;
