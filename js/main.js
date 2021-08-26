@@ -61,9 +61,9 @@ closeFullScreenButton.addEventListener("click", () => {
 
 (async function () {
   const unityInstance = await createUnityInstance(canvas, {
-    dataUrl: "Build/Build.data.unityweb",
-    frameworkUrl: "Build/Build.framework.js.unityweb",
-    codeUrl: "Build/Build.wasm.unityweb",
+    dataUrl: "Build/Build.data",
+    frameworkUrl: "Build/Build.framework.js",
+    codeUrl: "Build/Build.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
     productName: "Sammanslaget",
