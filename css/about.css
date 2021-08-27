@@ -5,7 +5,7 @@
 }
 
 #about nav {
-  z-index: 4;
+  z-index: 5;
   position: sticky;
   top: 0;
   height: 100px;
@@ -95,6 +95,7 @@
 }
 
 #about .pages nav {
+  z-index: 3;
   height: auto;
   position: sticky;
   top: calc(100vh - 188px);
@@ -146,7 +147,7 @@
 
 #about .pages a img {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   width: 64px;
   height: auto;
 }
