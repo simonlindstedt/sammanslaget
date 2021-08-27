@@ -56,7 +56,9 @@
 #about #card-grid {
   padding: 16px;
   min-height: calc(100vh - 100px);
-  width: 100%;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -88,7 +90,10 @@
 /* Pages */
 
 #about .pages {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   position: relative;
   color: var(--textColor);
@@ -124,7 +129,8 @@
 }
 
 #about .pages .page {
-  width: 100%;
+  /* width: 100%; */
+  max-width: 50%;
   min-height: 100vh;
   padding: 80px 64px 64px 64px;
   display: flex;
