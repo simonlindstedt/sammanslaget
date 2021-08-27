@@ -111,7 +111,7 @@ button.about-button svg {
 }
 
 button.about-button span {
-  font-size: 16px;
+  font-size: 24px;
   font-family: "Zhang Qa";
   color: var(--textColor);
   position: relative;
