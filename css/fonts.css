@@ -9,3 +9,9 @@
   src: url(./fonts/zhang-qa.regular.ttf) format("truetype");
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Neuton";
+  src: url(./fonts/neuton.regular.ttf) format("truetype");
+  font-style: normal;
+}

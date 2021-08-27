@@ -87,9 +87,9 @@ function onRestart() {
   if (aboutButton) {
     aboutButton.addEventListener("click", () => {
       unityInstance.SendMessage("JS", "SetMuteOverride", 1);
+
       if (document.querySelector("section#about") === null) {
         renderAboutMenu();
-
         // Top button
         const topButton = document.querySelector("button.return");
         topButton.addEventListener("click", () => {

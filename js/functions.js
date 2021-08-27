@@ -41,6 +41,11 @@ function renderAboutMenu() {
   </button>
 </nav>
 <div id="card-grid">
+  <div class="text">
+    Vill vi förmedla känslan av hoppfullhet och vikten utav att hjälpa varandra.
+    En liten gåva kan göra stor skillnad för någon i en utsatt situation. Efter
+    regn kommer alltid solsken och det gäller att fortsätta kämpa.
+  </div>
   <a href="#web-developers" class="card">
     <h2>Web developers</h2>
   </a>
@@ -88,11 +93,11 @@ function renderAboutMenu() {
     <div class="text">
       <h2>Simon och Linn</h2>
       <p>
-        lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem
-        impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
-        lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem
-        impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum
-        lorem impsum lorem impsum
+        Vi har samarbetat med alla delar av arbetslaget för att se till att
+        siten du läser detta på just nu uppfyller de krav på form, funktion och
+        interaktivitet som ställs. Arbetet har skett iterativt, då vi ständigt
+        har uppdaterat och modifierat sidan utefter nya behov och idéer som
+        uppstått under processens gång.
       </p>
     </div>
   </div>
@@ -109,7 +114,7 @@ function renderAboutMenu() {
         att alla frames ska flyta på ett naturligt sätt. Jag har haft ansvar
         över tap och swipe funktionerna. Och arbetat primärt med audio och font
         implementering. Mycket dialog med grafikern Julia angående färgval och
-        overall feeling för projektet. <br /> <br />
+        overall feeling för projektet. <br />
         Jonatan: Jag tagit många av besluten angående kod och struktur. Har även
         skrivit mycket av koden som har med interaktion och sammankoppling av
         system att göra, samt kopplingen mellan berättelsen och webbsidan. Jag
@@ -154,8 +159,7 @@ function renderAboutMenu() {
     </div>
   </div>
 </div>
-
-  `;
+`;
 
   const navLinks = aboutSection.querySelectorAll("ul.nav-items li a");
 
