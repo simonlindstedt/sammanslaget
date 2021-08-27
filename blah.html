@@ -1,23 +1,5 @@
-function ratioResize(ratio, element) {
-  let h = window.innerHeight - 64;
-  let w = Math.floor(h * ratio);
-
-  if (w > window.innerWidth) {
-    w = window.innerWidth;
-    h = Math.floor(w / ratio);
-  }
-
-  element.style.height = `${h}px`;
-  element.style.width = `${w}px`;
-}
-
-function renderAboutMenu() {
-  const aboutSection = document.createElement("section");
-  aboutSection.id = "about";
-
-  aboutSection.innerHTML = `
-  <nav>
-  <div style="display: flex; align-items: center;">
+<nav>
+  <div>
     <h2>Skapare från</h2>
     <a class="yrgo" href="https://www.yrgo.se/" target="_blank"
       ><img src="./assets/icons/Yrgo_logo_circle.png"
@@ -101,7 +83,7 @@ function renderAboutMenu() {
         har uppdaterat och modifierat sidan utefter nya behov och idéer som
         uppstått under processens gång.
       </p>
-      <a href="https://www.lindstedt.li/"><img src="./assets/icons/lindstedt.li.png" /></a>
+      <a href="https://www.lindstedt.li/">lindstedt.li</a>
       <a href="https://github.com/LinnJosefsson"
         ><img src="./assets/icons/GitHub-Mark-Light-120px-plus.png"
       /></a>
@@ -180,34 +162,3 @@ function renderAboutMenu() {
     </div>
   </div>
 </div>
-`;
-
-  const navLinks = aboutSection.querySelectorAll("ul.nav-items li a");
-
-  window.addEventListener("scroll", () => {
-    navLinks.forEach((navLink) => {
-      const active = navLink.attributes.href.nodeValue;
-      const button = navLink.querySelector("button");
-
-      button.addEventListener("mouseover", () => {
-        button.style.backgroundColor = "grey";
-        button.style.transform = "scale(1.03)";
-      });
-      button.addEventListener("mouseleave", () => {
-        if (active !== window.location.hash) {
-          button.style.backgroundColor = "var(--cardColor)";
-          button.style.transform = "scale(1)";
-        }
-      });
-
-      if (active === window.location.hash) {
-        button.style.backgroundColor = "grey";
-        button.style.transform = "scale(1.05)";
-      } else {
-        button.style.backgroundColor = "var(--cardColor)";
-        button.style.transform = "scale(1)";
-      }
-    });
-  });
-  document.body.appendChild(aboutSection);
-}
