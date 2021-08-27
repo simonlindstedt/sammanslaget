@@ -144,7 +144,7 @@ function renderAboutMenu() {
   <div id="game-artists" class="page">
     <h1>Spelgrafiker</h1>
     <div class="image">
-      <img src="./assets/images/julia.png" style="grid-column: 1 / 3" />
+      <img src="./assets/images/julia.png" style="grid-column: 1 / 3; height: 500px; object-position: center -30px" />
     </div>
     <div class="text">
       <h2>Julia Ahlberg</h2>
@@ -165,7 +165,7 @@ function renderAboutMenu() {
     <div class="image">
       <img
         src="./assets/images/marcus.JPG"
-        style="object-position: top; grid-column: 1 / 3"
+        style="object-position: top; grid-column: 1 / 3; height: 500px;"
       />
     </div>
     <div class="text">
