@@ -1,0 +1,34 @@
+createUnityInstance(document.querySelector("#unity-canvas"), {
+  dataUrl: "Build/Build.data",
+  frameworkUrl: "Build/Build.framework.js",
+  codeUrl: "Build/Build.wasm",
+  streamingAssetsUrl: "StreamingAssets",
+  companyName: "DefaultCompany",
+  productName: "Sammanslaget",
+  productVersion: "1.0",
+  // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+  // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+}).then((i) => (window.instance = i));
+
+// pageNavButton.addEventListener("click", () => {
+//   let i = 1;
+//   pageNavButton.classList.toggle("active");
+
+//   if (pageNavButton.classList.contains("active")) {
+//     navItems.forEach((navItem) => {
+//       const translateString = `translateY(${i * 88 * -1}px)`;
+//       navItem.style.transform = translateString;
+//       navItem.querySelector("button").addEventListener("click", () => {
+//         navItems.forEach((navItem) => {
+//           pageNavButton.classList.remove("active");
+//           navItem.style.transform = "translateY(0px)";
+//         });
+//       });
+//       i++;
+//     });
+//   } else {
+//     navItems.forEach((navItem) => {
+//       navItem.style.transform = "translateY(0px)";
+//     });
+//   }
+// });

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Puisi Adinda";
+  src: url(./fonts/Puisi-Adinda.ttf) format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zhang Qa";
+  src: url(./fonts/zhang-qa.regular.ttf) format("truetype");
+  font-style: normal;
+}
