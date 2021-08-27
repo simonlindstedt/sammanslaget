@@ -109,7 +109,7 @@ function onRestart() {
       setTimeout(() => {
         document.querySelector("main").style.display = "none";
         document.body.style.overflowY = "scroll";
-      }, 1000);
+      }, 800);
     });
   }
 })();
