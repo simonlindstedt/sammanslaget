@@ -20,7 +20,7 @@ function renderAboutMenu() {
   <div style="display: flex; align-items: center">
     <h2>Skapare från</h2>
     <a class="yrgo" href="https://www.yrgo.se/" target="_blank"
-      ><img src="./assets/icons/Yrgo_logo_circle.png"
+      ><img src="./assets/icons/yrgo.png"
     /></a>
   </div>
   <button class="return">
@@ -93,7 +93,7 @@ function renderAboutMenu() {
       <img src="https://avatars.githubusercontent.com/LinnJosefsson" />
     </div>
     <div class="text">
-      <h2>Simon och Linn</h2>
+      <h2>Simon Lindstedt och Linn Josefsson</h2>
       <p>
         Vi har samarbetat med alla delar av arbetslaget för att se till att
         siten du läser detta på just nu uppfyller de krav på form, funktion och
