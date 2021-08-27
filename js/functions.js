@@ -17,7 +17,7 @@ function renderAboutMenu() {
 
   aboutSection.innerHTML = `
   <nav>
-  <div style="display: flex; align-items: center;">
+  <div style="display: flex; align-items: center">
     <h2>Skapare från</h2>
     <a class="yrgo" href="https://www.yrgo.se/" target="_blank"
       ><img src="./assets/icons/Yrgo_logo_circle.png"
@@ -101,7 +101,9 @@ function renderAboutMenu() {
         har uppdaterat och modifierat sidan utefter nya behov och idéer som
         uppstått under processens gång.
       </p>
-      <a href="https://www.lindstedt.li/"><img src="./assets/icons/lindstedt.li.png" /></a>
+      <a href="https://www.lindstedt.li/"
+        ><img src="./assets/icons/lindstedt.li.png"
+      /></a>
       <a href="https://github.com/LinnJosefsson"
         ><img src="./assets/icons/GitHub-Mark-Light-120px-plus.png"
       /></a>
@@ -110,8 +112,8 @@ function renderAboutMenu() {
   <div id="game-developers" class="page">
     <h1>Spelutvecklare</h1>
     <div class="image">
-      <img src="./assets/images/greyhound.jpg" />
-      <img src="./assets/images/pomeranian.jpg" />
+      <img src="./assets/images/emilie.png" />
+      <img src="./assets/images/jonatan.png" />
     </div>
     <div class="text">
       <h2>Emilie Vogel och Jonatan Johansson</h2>
@@ -125,6 +127,7 @@ function renderAboutMenu() {
         <a href="https://www.linkedin.com/in/emilie-vogel/"
           ><img src="./assets/icons/Linkedin.png"
         /></a>
+        <br />
         <br />
         Jonatan: Jag tagit många av besluten angående kod och struktur. Har även
         skrivit mycket av koden som har med interaktion och sammankoppling av
@@ -141,10 +144,10 @@ function renderAboutMenu() {
   <div id="game-artists" class="page">
     <h1>Spelgrafiker</h1>
     <div class="image">
-      <img src="./assets/images/tollare.jpg" />
+      <img src="./assets/images/julia.png" />
     </div>
     <div class="text">
-      <h2>Julia Ahlberg - ga20</h2>
+      <h2>Julia Ahlberg</h2>
       <p>
         Min roll under detta projektet har varit att producera grafiken i vårat
         bidrag, det vill säga är jag grafikern. Som grafiker har jag arbetat med
@@ -180,6 +183,7 @@ function renderAboutMenu() {
     </div>
   </div>
 </div>
+
 `;
 
   const navLinks = aboutSection.querySelectorAll("ul.nav-items li a");

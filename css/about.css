@@ -144,6 +144,8 @@
 }
 
 #about .pages a img {
+  position: relative;
+  z-index: 3;
   width: 64px;
   height: auto;
 }
