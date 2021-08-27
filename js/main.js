@@ -6,10 +6,9 @@ const closeFullScreenButton = document.querySelector(
 );
 
 function onStartup() {
-  preloader.classList.add("done");
   setTimeout(() => {
     preloader.remove();
-  }, 2500);
+  }, 1100);
 }
 
 window.addEventListener("load", () => {
@@ -82,7 +81,12 @@ closeFullScreenButton.addEventListener("click", () => {
       // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
     },
     function (percent) {
-      preloader.querySelector("h2").innerText = `Laddar...(${percent * 100}%)`;
+      preloader.querySelector("h2").innerText = `Laddar...(${(
+        percent * 100
+      ).toFixed(0)}%)`;
+      if (percent === 1) {
+        preloader.classList.add("done");
+      }
     }
   );
   // unityInstance.SendMessage("JS", "SetText", "Hej hackathon");

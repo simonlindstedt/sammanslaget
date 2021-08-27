@@ -17,7 +17,7 @@ function renderAboutMenu() {
 
   aboutSection.innerHTML = `
   <nav>
-  <h2>Skapare</h2>
+  <h2>Skapare från <a class="yrgo" href="https://www.yrgo.se/" target="_blank">Yrgo</a></h2>
   <a href="#home">
     <button class="return">
       <svg
@@ -172,7 +172,7 @@ function renderAboutMenu() {
       });
       button.addEventListener("mouseleave", () => {
         if (active !== window.location.hash) {
-          button.style.backgroundColor = "black";
+          button.style.backgroundColor = "var(--cardColor)";
           button.style.transform = "scale(1)";
         }
       });
@@ -181,7 +181,7 @@ function renderAboutMenu() {
         button.style.backgroundColor = "grey";
         button.style.transform = "scale(1.05)";
       } else {
-        button.style.backgroundColor = "black";
+        button.style.backgroundColor = "var(--cardColor)";
         button.style.transform = "scale(1)";
       }
     });
